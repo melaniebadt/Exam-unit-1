@@ -1,17 +1,38 @@
-// Your program should start at this line.
-/*
-Example:
+
+for (int i = 0; i < 37; i++)
+{
+    Move();
+}
+
+for (int i = 0; i < 2; i++)
+{
+    Move();
+}
+
+for (int i = 0; i < 3; i++)
+{
+    Turn();
+}
+
+
 Move();
+
+for (int i = 0; i < 3; i++)
+{
+    Move(37);
+    Turn();
+    Move(2);
+    Turn();
+    Move(37);
+    Turn(3);
+    Move(2);
+    Turn();
+}
+
+Move(37);
 Move();
-Move();
-Turn();
-Move();
-Move();
-Turn();
-Turn();
-Turn();
-Move();
-*/
+AtGoal();
+
 
 
 #region Basic functions

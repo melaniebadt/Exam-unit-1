@@ -1,21 +1,45 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Runtime.CompilerServices;
+
 Console.WriteLine("Hello, World!");
 
 // Your program should start at this line.
-/*
-Example:
-Move();
-Move();
-Move();
-Turn();
-Move();
-Move();
-Turn();
-Turn();
-Turn();
-Move();
-*/
 
+/*
+for (int i = 0; i < 37; i++)
+{
+    Move();
+}
+
+for (int i = 0; i < 2; i++)
+{
+    Move();
+}
+
+for (int i = 0; i < 3; i++)
+{
+    Turn();
+}
+
+
+Move();
+
+for (int i = 0; i < 3; i++)
+{
+    Move(37);
+    Turn();
+    Move(2);
+    Turn();
+    Move(37);
+    Turn(3);
+    Move(2);
+    Turn();
+}
+
+Move(37);
+Move();
+AtGoal();
+*/
 
 #region Basic functions
 // These functions are just her to make your intelisense work. 
