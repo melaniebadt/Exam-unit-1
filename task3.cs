@@ -22,7 +22,6 @@ for (int i = 0; i < 3; i++)
     Turn();
 }
 
-
 Move();
 
 for (int i = 0; i < 2; i++)
