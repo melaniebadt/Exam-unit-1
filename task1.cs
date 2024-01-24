@@ -1,4 +1,3 @@
-
 for (int i = 0; i < 37; i++)
 {
     Move();
@@ -13,7 +12,6 @@ for (int i = 0; i < 3; i++)
 {
     Turn();
 }
-
 
 Move();
 
@@ -32,8 +30,6 @@ for (int i = 0; i < 3; i++)
 Move(37);
 Move();
 AtGoal();
-
-
 
 #region Basic functions
 // These functions are just her to make your intelisense work. 
