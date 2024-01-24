@@ -1,18 +1,64 @@
-// Your program should start at this line.
-/*
-Example:
-Move();
-Move();
-Move();
-Turn();
-Move();
-Move();
-Turn();
-Turn();
-Turn();
-Move();
-*/
+for (int i = 0; i < 11; i++)
+{
+    Move();
+}
 
+for (int i = 0; i < 5; i++)
+{
+    Move();
+}
+for (int i = 0; i < 3; i++)
+{
+    Move();
+}
+
+for (int i = 0; i < 2; i++)
+{
+    Move();
+}
+
+for (int i = 0; i < 3; i++)
+{
+    Turn();
+}
+
+
+Move();
+
+for (int i = 0; i < 2; i++)
+{
+    Move(11);
+    Turn();
+    Move(2);
+    Turn();
+    Move(11);
+    Turn(3);
+
+    if (i == 0)
+    {
+        Move(2);
+        Turn(3);
+    }
+}
+
+Move(2);
+
+for (int i = 0; i < 2; i++)
+{
+    Move(5);
+    Turn(3);
+    Move(2);
+    Turn(3);
+    Move(5);
+    Turn();
+    Move(2);
+    Turn();
+}
+
+Move(5);
+Turn(3);
+Move(3);
+AtGoal();
 
 #region Basic functions
 // These functions are just her to make your intelisense work. 

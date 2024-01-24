@@ -3,16 +3,6 @@ using System.Runtime.CompilerServices;
 
 Console.WriteLine("Hello, World!");
 
-while (!AtGoal())
-{
-    while (Peek())
-    {
-        Move(); 
-    }
-
-    Turn(); 
-}
-
 #region Basic functions
 // These functions are just her to make your intelisense work. 
 // They only have a conceptual function.
