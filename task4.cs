@@ -1,3 +1,19 @@
+void TurnThisMany(int number)
+{
+    for(int i = 0; i < number; i++)
+    {
+       Turn();     
+    }
+};
+
+void MoveThisMany(int number) 
+{
+    for(int i = 0; i < number; i++)
+    {
+       Move();     
+    }
+};
+
 int[] Turns =     {1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 1, 1, 3, 1, 3, 1, 3, 1, 3, 1};
 int[] Movements = {4, 4, 1, 1, 3, 1, 5, 3, 1, 1, 2, 1, 2, 5, 1, 1, 2, 3, 3, 1, 2, 3, 3, 5, 1, 4, 1, 1, 1, 2, 1, 4, 2};
 
@@ -7,15 +23,15 @@ while (!AtGoal())
     {
         if(i < Turns.Length)
         {
-            Turn(Turns[i]);
+            TurnThisMany(Turns[i]);
         }
 
         if(i < Movements.Length)
         {
-            Move(Movements[i]);
+            MoveThisMany(Movements[i]);
         }
     }
-}    
+}
 
 #region Basic functions
 // These functions are just her to make your intelisense work. 
