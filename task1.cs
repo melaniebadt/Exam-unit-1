@@ -1,33 +1,33 @@
-for (int i = 0; i < 37; i++)
+void MoveThisMany(int number) 
 {
-    Move();
-}
+    for(int i = 0; i < number; i++)
+    {
+       Move();     
+    }
+};
 
-for (int i = 0; i < 2; i++)
-{
-    Move();
-}
-
-for (int i = 0; i < 3; i++)
+void TurnThreeTimes()
 {
     Turn();
-}
+    Turn();
+    Turn();
+};
 
 Move();
 
 for (int i = 0; i < 3; i++)
 {
-    Move(37);
+    MoveThisMany(37);
     Turn();
-    Move(2);
+    MoveThisMany(2);
     Turn();
-    Move(37);
-    Turn(3);
-    Move(2);
-    Turn(3);
+    MoveThisMany(37);
+    TurnThreeTimes();
+    MoveThisMany(2);
+    TurnThreeTimes();
 }
 
-Move(37);
+MoveThisMany(37);
 Move();
 AtGoal();
 
