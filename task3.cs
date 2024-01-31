@@ -1,62 +1,53 @@
-for (int i = 0; i < 11; i++)
+void MoveThisMany(int number) 
 {
-    Move();
-}
+    for(int i = 0; i < number; i++)
+    {
+       Move();     
+    }
+};
 
-for (int i = 0; i < 5; i++)
-{
-    Move();
-}
-for (int i = 0; i < 3; i++)
-{
-    Move();
-}
-
-for (int i = 0; i < 2; i++)
-{
-    Move();
-}
-
-for (int i = 0; i < 3; i++)
+void TurnThreeTimes()
 {
     Turn();
-}
+    Turn();
+    Turn();
+};
 
 Move();
 
 for (int i = 0; i < 2; i++)
 {
-    Move(11);
+    MoveThisMany(11);
     Turn();
-    Move(2);
+    MoveThisMany(2);
     Turn();
-    Move(11);
-    Turn(3);
+    MoveThisMany(11);
+    TurnThreeTimes();
 
     if (i == 0)
     {
-        Move(2);
-        Turn(3);
+        MoveThisMany(2);
+        TurnThreeTimes();
     }
 }
 
-Move(2);
+MoveThisMany(2);
 
 for (int i = 0; i < 2; i++)
 {
-    Move(5);
-    Turn(3);
-    Move(2);
-    Turn(3);
-    Move(5);
+    MoveThisMany(5);
+    TurnThreeTimes();
+    MoveThisMany(2);
+    TurnThreeTimes();
+    MoveThisMany(5);
     Turn();
-    Move(2);
+    MoveThisMany(2);
     Turn();
 }
 
-Move(5);
-Turn(3);
-Move(3);
+MoveThisMany(5);
+TurnThreeTimes();
+MoveThisMany(3);
 AtGoal();
 
 #region Basic functions
